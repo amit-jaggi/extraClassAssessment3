@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment 3</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>    
+    <section class="positioning-1">
+        <h2>Q1. Explain absolute and relative position by using example and with words as well</h2>
+        <div class="container">
+            <div class="absolute-container">
+                <span>Absolute Position: </span>An element with <mark>position: absolute;</mark> will cause it to adjust its position with respect to its parent. If no parent is present, then it uses the document body as parent.
+            </div>
+            <div class="relative-container">
+                <span>Relative Position: </span>Setting the top, right, bottom, and left properties of an element with <mark>position: relative;</mark> property will cause it to adjust from its normal position. The other objects or elements will not fill the gap.
+            </div>
+        </div>
+        <div class="example">
+            <div class="absolute-example">
+                <div class="parent"> Relative Position
+                    <div class="child">Absolute Position</div>
+                </div>
+            </div>
+            <div class="relative-example">
+                <div class="first_element">Relative Position</div> 
+                <div class="second_element">Relative Position</div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="positioning-2">
+        <h2>Q2. Explain the difference between fixed and sticky</h2>
+        <table border="1">
+            <tr>
+                <th>Fixed Position</th>
+                <th>Sticky Position</th>
+            </tr>
+            <tr>
+                <td>Element with position: fixed property is fixed to the viewport and doesn't move irrespective of scrolling.</td>
+                <td>Element with position: sticky property can scroll to an offset value provided by the user.</td>
+            </tr>
+            <tr>
+                <td>This property is supported by all the browsers.</td>
+                <td>This property is only supported by all modern browsers.</td>
+            </tr>
+            <tr>
+                <td>Element with position: fixed property never leaves the viewport position it was fixed to.</td>
+                <td>Element with position: sticky property leaves the viewport when its parent element scrolls off the viewport.</td>
+            </tr>
+            <tr>
+                <td>Element with position: fixed property does not effect the other element's flow on the page ie it does not capture additional space.</td>
+                <td>Element with position: sticky property does effect the other element's flow in the page ie., it will take the additional space.</td>
+            </tr>
+            <tr>
+                <td>Example: In this assignment the cyan color button is created by using position: fixed</td>
+                <td>Example: The purple color header which is present in the top of the assignment is created by using position: Sticky</td>
+            </tr>
+        </table>
+        <div class="positioning-example"></div>
+    </section>
+
+    <section class="floating">
+        <h2>Q3. Arrange 5 boxes in alternate manner , first box on left of screen , second on right of screen and so on</h2>
+        <div class="floating-container">
+            <div class="box box-1">Box 1</div>
+            <div class="box box-2">Box 2</div>
+            <div class="box box-3">Box 3</div>
+            <div class="box box-4">Box 4</div>
+            <div class="box box-5">Box 5</div>
+        </div>
+    </section>
+
+    <section class="animation">
+        <h2>Q4. Create a infinte jumping ball using animation</h2>
+        <div class="ball"></div>
+    </section>
+
+    <section class="media-query">
+        <h2>Q5. Bring five cards in a row on full screen , if screen size is 360px then bring the boxes in column , by using media queries</h2>
+        <div class="container">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+    </section>
+
+    <section class="indexing">
+        <h2>Q6. Create two boxes and box1 should be on top and box2 should be on bottom</h2>
+        <div class="indexing-container">
+            <div class="box box-1">Box 1</div>
+            <div class="box box-2">Box 2</div>
+            <div class="box box-3">Box 3</div>
+        </div>
+    </section>
+
+    <section class="sizing">
+        <h2>Q7. Explain box sizing Properties with examples</h2>
+        <div class="sizing-container">
+            <h3>The box-sizing property defines how the width and height of an element are calculated, should they include padding and borders, or not.</h3>
+            <h3>Border-Box: Border-box include padding and border of an element within.
+            For example : if width is 300px, padding is 10px and border is 5px, then content width is 270px, but overall width (border-box) will be 300px. Means content width will reduce to maintain border-box.</h3>
+            <div class="square square-1">Box 1<br>box-sizing: border-box;</div>
+            <h3>Content-box : Content-box is default value of div tag. By adding border and padding to a div with fixed width can change overall width ( border box) of div.</h3>
+            <h3>For example: If width is 300px, padding is 10px and border is 5px, then content width is 300px, but overall width (border-box) will be 330px by adding padding and border with width.</h3>
+            <div class="square square-2">Box 2<br>box-sizing: content-box;</div>
+        </div>
+    </section>
+</body>
+</html>
